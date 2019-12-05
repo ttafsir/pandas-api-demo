@@ -1,6 +1,6 @@
 # pandas-api
 
-![](/Users/thiamt/Projects/pandas-api-demo/docs/giant-panda-in-the-forest-banner.png)
+![](./docs/giant-panda-in-the-forest-banner.png)
 
 Pandas is an awesome data manipulation and analysis library written for Python. It is an
 open source project that provides high-performance, easy-to-use data structures and data analysis tools.
