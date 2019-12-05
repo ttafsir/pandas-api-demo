@@ -92,6 +92,8 @@ def main():
     # Enrich Data dynamically using pandas' apply method
     rest_api_df = df.apply(enrich_data, axis=1, url=GEOCODE_API_URL, column='address')
 
+    print(rest_api_df)
+
     # Save Output Data
     rest_api_df.to_csv(output_filename, encoding='utf8', index=False)
 
