@@ -1,0 +1,7 @@
+location_name,address,latitude,longitude,formatted_address,accuracy
+Corporate HQ,1800 W Balboa Boulevard Newport Beach  California,33.6079545,-117.9250816,"1800 W Balboa Blvd, Newport Beach, CA 92663, USA",ROOFTOP
+Marketing,10 Hudson Yards  New York NY,40.7527246,-74.0016428,"10 Hudson Yards 24th Floor, 347 10th Ave, New York, NY 10001, USA",ROOFTOP
+London Office,25 Canada Square Canary Wharf  London,51.5040016,-0.0177746,"Citigroup Centre, Canary Wharf, London E14, UK",ROOFTOP
+Patch Branch,"7406 Oak Ave. Patchogue, NY 11772",40.76892369999999,-73.00954999999999,"Oak St, Patchogue, NY 11772, USA",GEOMETRIC_CENTER
+Goldsboro,"59 North Dr. Goldsboro, NC 27530",35.3913609,-77.963208,"North Dr, Goldsboro, NC 27534, USA",GEOMETRIC_CENTER
+Davenport Branch,52804,41.5292258,-90.6867939,"Davenport, IA 52804, USA",APPROXIMATE
