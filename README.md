@@ -1,4 +1,4 @@
-# pandas-api
+# pandas + APIs
 
 <div align="center">
 <img src="./docs/giant-panda-in-the-forest-banner.png">
@@ -8,7 +8,7 @@
 Pandas is an awesome data manipulation and analysis library written for Python. It is an
 open source project that provides high-performance, easy-to-use data structures and data analysis tools.
 
-The goal of the samples in this repository is to demonstrate the use of Pandas' `apply` method to dynamically enrich a Dataframe using data from APIs. The reality of manipulating data is that your results will only be as good as your input (**Garbage in, Garbage out**). Because APIs allows us to programmatically share and retrieve data between systems, leveraging Pandas get input directly from APIs allow us to gather better quality data at using a more scalable approach.
+The goal of the samples in this repository is to demonstrate the use of Pandas' `apply` method to dynamically enrich a Dataframe using data from APIs. The reality of manipulating data is that your results will only be as good as your input (**Garbage in, Garbage out**). Because APIs allows us to programmatically share and retrieve data between systems, leveraging Pandas get input directly from APIs allow us to gather better quality data and to use a more scalable approach.
 
 ## requirements
 
@@ -91,6 +91,12 @@ I have excluded the `.env` file from version control, so you would have to creat
 # .env file example
 GCP_API_KEY=AIzSKjdl_NlhCETCWg23kjkP0nS6nw376zM
 
+```
+
+Alternatively, you can manually set the API key in script
+
+```python
+GCP_API_KEY = 'AIzSKjdl_NlhCETCWg23kjkP0nS6nw376zM'
 ```
 
 ### Running the script
@@ -189,7 +195,8 @@ def enrich_data(row, **kwargs):
         url = kwargs.get('url')
         succeeded, results = retrieve_map_data(url, address=address)
 
-        # Update Dataframe
+        # Update Dataframe, by created new columns of data, and appending
+        # the value of the row
         if succeeded:
             row['latitude'] = results['geometry']['location']['lat']
             row['longitude'] = results['geometry']['location']['lng']
