@@ -1,8 +1,7 @@
 # pandas + APIs
 
 <div align="center">
-<img src="./docs/giant-panda-in-the-forest-banner.png">
-
+    <img src="./docs/pandas_api_banner.png" />
 </div>
 
 Pandas is an awesome data manipulation and analysis library written for Python. It is an
